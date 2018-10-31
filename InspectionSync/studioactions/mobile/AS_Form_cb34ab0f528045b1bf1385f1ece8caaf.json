@@ -1,0 +1,24 @@
+{
+    "AS_Form_cb34ab0f528045b1bf1385f1ece8caaf": {
+        "id": "AS_Form_cb34ab0f528045b1bf1385f1ece8caaf",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSetting",
+            "type": "forms",
+            "platform": "",
+            "KUID": "h34e1417cbdc4d9bb67df1cb269d786e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a6ef54e46a784f28933045fb2d1e26a8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var config={};\n      config[\"statusChange\"]=function(isOnline){\n        if(isOnline){\n          alert(\"online\");\n          //self.view.loadingScreen.show(1,\"connecting\");\n          //self.view.loadingScreen.hide(2);\n        }else{\n          alert(\"offline\");\n          //self.view.loadingScreen.show(2,\"offline\");\n        }\n      }\n      kony.net.setNetworkCallbacks(config);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

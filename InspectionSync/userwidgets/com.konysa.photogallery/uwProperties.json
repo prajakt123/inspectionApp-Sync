@@ -1,0 +1,56 @@
+{
+    "classname": "photogallery",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ga981fb072184fc5ad76d050addb4d8e",
+                    "paramList": [],
+                    "propertyKey": "removeAllImage",
+                    "pw": {
+                        "displayName": "removeAllImage",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "be8a59412d3e4f3caf9153af8f7f1e21",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f441a6b87dc3492897941403ddf0c167",
+                    "paramList": [],
+                    "propertyKey": "addImageBase64",
+                    "pw": {
+                        "displayName": "addImageBase64",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "be8a59412d3e4f3caf9153af8f7f1e21",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.konysa",
+    "version": "1.0.0"
+}

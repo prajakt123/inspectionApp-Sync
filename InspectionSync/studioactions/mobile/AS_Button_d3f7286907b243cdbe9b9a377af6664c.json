@@ -1,0 +1,31 @@
+{
+    "AS_Button_d3f7286907b243cdbe9b9a377af6664c": {
+        "id": "AS_Button_d3f7286907b243cdbe9b9a377af6664c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSetting",
+            "type": "forms",
+            "platform": "",
+            "KUID": "h34e1417cbdc4d9bb67df1cb269d786e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___f144e601ffc245fbb8ff5006cd2abbed",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "_fetchRecords",
+            "display": "_fetchRecords",
+            "inputparams": [{
+                "name": "dataModel",
+                "value": "\"asset\""
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

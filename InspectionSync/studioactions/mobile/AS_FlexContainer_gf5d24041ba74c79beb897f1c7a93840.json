@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_gf5d24041ba74c79beb897f1c7a93840": {
+        "id": "AS_FlexContainer_gf5d24041ba74c79beb897f1c7a93840",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_fbbaf9f93c734fedb102947b633a818f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.checkUncheckItem(eventobject);",
+            "callbackType": null
+        }]
+    }
+}

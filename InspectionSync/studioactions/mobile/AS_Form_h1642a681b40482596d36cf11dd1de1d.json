@@ -1,0 +1,24 @@
+{
+    "AS_Form_h1642a681b40482596d36cf11dd1de1d": {
+        "id": "AS_Form_h1642a681b40482596d36cf11dd1de1d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmInspectionHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "fb8674b4f97549f1a5f496bc6f4d1c3c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d8b0630e2e524d42aa972d68af1bdcc8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onFormPostShow();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}
