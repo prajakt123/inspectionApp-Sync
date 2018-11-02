@@ -1,7 +1,6 @@
 define([],function(){
 	var mappings = {
 		"CreatedTimestamp" : "CreatedTimestamp",
-		"LastUpdatedTimestamp" : "LastUpdatedTimestamp",
 		"Measurement_Id" : "Measurement_Id",
 		"Measurement_Max_Value" : "Measurement_Max_Value",
 		"Measurement_Min_Value" : "Measurement_Min_Value",
@@ -15,7 +14,6 @@ define([],function(){
 	
 	var typings = {
 		"CreatedTimestamp" : "date",
-		"LastUpdatedTimestamp" : "date",
 		"Measurement_Id" : "number",
 		"Measurement_Max_Value" : "number",
 		"Measurement_Min_Value" : "number",

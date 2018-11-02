@@ -4,7 +4,6 @@ define([],function(){
 		"Asset_Id" : "Asset_Id",
 		"CreatedTimestamp" : "CreatedTimestamp",
 		"Group_Id" : "Group_Id",
-		"LastUpdatedTimestamp" : "LastUpdatedTimestamp",
 	};
 	Object.freeze(mappings);
 	
@@ -13,7 +12,6 @@ define([],function(){
 		"Asset_Id" : "number",
 		"CreatedTimestamp" : "date",
 		"Group_Id" : "number",
-		"LastUpdatedTimestamp" : "date",
 	}
 	Object.freeze(typings);
 	

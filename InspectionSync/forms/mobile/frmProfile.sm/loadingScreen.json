@@ -48,7 +48,7 @@
     "layouttype": 2,
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
-    "parent": "flxMain",
+    "parent": "frmProfile",
     "pf": "frmProfile",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

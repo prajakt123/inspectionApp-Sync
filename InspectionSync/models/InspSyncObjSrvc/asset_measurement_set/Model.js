@@ -11,9 +11,6 @@ define([],function(){
 		CreatedTimestamp : function(val, state){
 			state['CreatedTimestamp'] = val;
 		},
-		LastUpdatedTimestamp : function(val, state){
-			state['LastUpdatedTimestamp'] = val;
-		},
 		Measurement_Set_Id : function(val, state){
 			state['Measurement_Set_Id'] = val;
 		},
@@ -26,7 +23,6 @@ define([],function(){
 			privateState.Asset_Id = defaultValues?(defaultValues["Asset_Id"]?defaultValues["Asset_Id"]:null):null;
 			privateState.Asset_Measurement_Set_Id = defaultValues?(defaultValues["Asset_Measurement_Set_Id"]?defaultValues["Asset_Measurement_Set_Id"]:null):null;
 			privateState.CreatedTimestamp = defaultValues?(defaultValues["CreatedTimestamp"]?defaultValues["CreatedTimestamp"]:null):null;
-			privateState.LastUpdatedTimestamp = defaultValues?(defaultValues["LastUpdatedTimestamp"]?defaultValues["LastUpdatedTimestamp"]:null):null;
 			privateState.Measurement_Set_Id = defaultValues?(defaultValues["Measurement_Set_Id"]?defaultValues["Measurement_Set_Id"]:null):null;
 		//Using parent contructor to create other properties req. to kony sdk	
 			BaseModel.call(this);
@@ -49,13 +45,6 @@ define([],function(){
 					get : function(){return privateState.CreatedTimestamp},
 					set : function(val){
 						setterFunctions['CreatedTimestamp'].call(this,val,privateState);
-					},
-					enumerable : true,
-				},
-				"LastUpdatedTimestamp" : {
-					get : function(){return privateState.LastUpdatedTimestamp},
-					set : function(val){
-						setterFunctions['LastUpdatedTimestamp'].call(this,val,privateState);
 					},
 					enumerable : true,
 				},

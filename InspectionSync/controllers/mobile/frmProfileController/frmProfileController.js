@@ -5,6 +5,8 @@ define({
    * @param Obj 
    */
   onNavigate:function(Obj){
+    if(Obj===null || Obj===undefined)
+      return;
     if(!InspectionUtil.isNetworkAvailable()){
       this.view.loadingScreen.show("offline",2);
     }
@@ -20,9 +22,10 @@ define({
     var config={};
     config["statusChange"]=function(isOnline){
       if(isOnline){
-        self.view.loadingScreen.hide(2);
+        //self.view.loadingScreen.hide(2);
+        self.view.lblNetworkStatus.setVisibility(false);
       }else{
-        self.view.loadingScreen.show("offline",2);
+        self.view.lblNetworkStatus.setVisibility(true);
       }
     }
     kony.net.setNetworkCallbacks(config);

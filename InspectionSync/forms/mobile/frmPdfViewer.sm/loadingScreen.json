@@ -48,10 +48,11 @@
     "layouttype": 2,
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
-    "parent": "flxRoot",
+    "parent": "frmPdfViewer",
     "pf": "frmPdfViewer",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
+    "snaptogrid": true,
     "sourceUserWidget": "i81f9bfcd41540378a00069abab440dd",
     "wType": "UserWidgetInstance",
     "zindex": 100

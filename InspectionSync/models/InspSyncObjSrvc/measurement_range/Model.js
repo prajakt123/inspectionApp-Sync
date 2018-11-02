@@ -5,9 +5,6 @@ define([],function(){
 		CreatedTimestamp : function(val, state){
 			state['CreatedTimestamp'] = val;
 		},
-		LastUpdatedTimestamp : function(val, state){
-			state['LastUpdatedTimestamp'] = val;
-		},
 		Measurement_Id : function(val, state){
 			state['Measurement_Id'] = val;
 		},
@@ -39,7 +36,6 @@ define([],function(){
 	function measurement_range(defaultValues){
 		var privateState = {};
 			privateState.CreatedTimestamp = defaultValues?(defaultValues["CreatedTimestamp"]?defaultValues["CreatedTimestamp"]:null):null;
-			privateState.LastUpdatedTimestamp = defaultValues?(defaultValues["LastUpdatedTimestamp"]?defaultValues["LastUpdatedTimestamp"]:null):null;
 			privateState.Measurement_Id = defaultValues?(defaultValues["Measurement_Id"]?defaultValues["Measurement_Id"]:null):null;
 			privateState.Measurement_Max_Value = defaultValues?(defaultValues["Measurement_Max_Value"]?defaultValues["Measurement_Max_Value"]:null):null;
 			privateState.Measurement_Min_Value = defaultValues?(defaultValues["Measurement_Min_Value"]?defaultValues["Measurement_Min_Value"]:null):null;
@@ -57,13 +53,6 @@ define([],function(){
 					get : function(){return privateState.CreatedTimestamp},
 					set : function(val){
 						setterFunctions['CreatedTimestamp'].call(this,val,privateState);
-					},
-					enumerable : true,
-				},
-				"LastUpdatedTimestamp" : {
-					get : function(){return privateState.LastUpdatedTimestamp},
-					set : function(val){
-						setterFunctions['LastUpdatedTimestamp'].call(this,val,privateState);
 					},
 					enumerable : true,
 				},

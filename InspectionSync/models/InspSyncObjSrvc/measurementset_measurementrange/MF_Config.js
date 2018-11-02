@@ -1,7 +1,6 @@
 define([],function(){
 	var mappings = {
 		"CreatedTimestamp" : "CreatedTimestamp",
-		"LastUpdatedTimestamp" : "LastUpdatedTimestamp",
 		"MeasurementSet_MeasurementRange_Id" : "MeasurementSet_MeasurementRange_Id",
 		"Measurement_Range_Id" : "Measurement_Range_Id",
 		"Measurement_Set_Id" : "Measurement_Set_Id",
@@ -10,7 +9,6 @@ define([],function(){
 	
 	var typings = {
 		"CreatedTimestamp" : "date",
-		"LastUpdatedTimestamp" : "date",
 		"MeasurementSet_MeasurementRange_Id" : "number",
 		"Measurement_Range_Id" : "number",
 		"Measurement_Set_Id" : "number",

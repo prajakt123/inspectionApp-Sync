@@ -17,9 +17,6 @@ define([],function(){
 		Inspection_Value : function(val, state){
 			state['Inspection_Value'] = val;
 		},
-		LastUpdatedTimestamp : function(val, state){
-			state['LastUpdatedTimestamp'] = val;
-		},
 		Measurement_History_Id : function(val, state){
 			state['Measurement_History_Id'] = val;
 		},
@@ -49,7 +46,6 @@ define([],function(){
 			privateState.Inspection_Id = defaultValues?(defaultValues["Inspection_Id"]?defaultValues["Inspection_Id"]:null):null;
 			privateState.Inspection_Timestamp = defaultValues?(defaultValues["Inspection_Timestamp"]?defaultValues["Inspection_Timestamp"]:null):null;
 			privateState.Inspection_Value = defaultValues?(defaultValues["Inspection_Value"]?defaultValues["Inspection_Value"]:null):null;
-			privateState.LastUpdatedTimestamp = defaultValues?(defaultValues["LastUpdatedTimestamp"]?defaultValues["LastUpdatedTimestamp"]:null):null;
 			privateState.Measurement_History_Id = defaultValues?(defaultValues["Measurement_History_Id"]?defaultValues["Measurement_History_Id"]:null):null;
 			privateState.Measurement_Images_Id = defaultValues?(defaultValues["Measurement_Images_Id"]?defaultValues["Measurement_Images_Id"]:null):null;
 			privateState.Measurement_Range_Id = defaultValues?(defaultValues["Measurement_Range_Id"]?defaultValues["Measurement_Range_Id"]:null):null;
@@ -93,13 +89,6 @@ define([],function(){
 					get : function(){return privateState.Inspection_Value},
 					set : function(val){
 						setterFunctions['Inspection_Value'].call(this,val,privateState);
-					},
-					enumerable : true,
-				},
-				"LastUpdatedTimestamp" : {
-					get : function(){return privateState.LastUpdatedTimestamp},
-					set : function(val){
-						setterFunctions['LastUpdatedTimestamp'].call(this,val,privateState);
 					},
 					enumerable : true,
 				},

@@ -28,11 +28,6 @@ define({
       this.previousForm=inspection;
       return;
     }
-    if(!InspectionUtil.isNetworkAvailable()){
-      this.view.loadingScreen.show("offline",2);
-    }else{
-      this.view.loadingScreen.hide(2);
-    }
     if(inspection===null||inspection===undefined)
       return;
     this.previousForm="frmInspectionsList";
@@ -52,9 +47,10 @@ define({
     var config={};
     config["statusChange"]=function(isOnline){
       if(isOnline){
-        self.view.loadingScreen.hide(2);
+        //self.view.loadingScreen.hide(2);
+        self.view.lblNetworkStatus.setVisibility(false);
       }else{
-        self.view.loadingScreen.show("offline",2);
+        self.view.lblNetworkStatus.setVisibility(true);
       }
     }
     kony.net.setNetworkCallbacks(config);
@@ -834,6 +830,18 @@ define({
     navigationData.previousForm = "frmInspectionExecution";
     navigationData.asset_id = this.inspection["Asset_Id"];
     navigationObj.navigate(navigationData);
+  },
+  /**
+   * @function
+   *
+   */
+  navigateToFrmInspectionList:function(){
+    try{
+      var navObj=new kony.mvc.Navigation("frmInspectionsList");
+      navObj.navigate();
+    }catch(excp){
+      debugger;
+    }
   },
   /**
    * @function

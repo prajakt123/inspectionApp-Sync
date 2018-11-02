@@ -6,7 +6,8 @@ var app_constant={
   "user":"User000",
   "measurement_set":"MEA0",
   "offline_inspection_msg":"Inspection to sync(",
-  "offline_inspection_closing_msg":")"
+  "offline_inspection_closing_msg":")",
+  "NO_NETWORK_MESSAGE":"Please check your network connection!"
 };
 var DATA_MODEL={
   "INSPECTION":"inspection",

@@ -1,0 +1,30 @@
+{
+    "AS_Segment_e9cecbadfb2944a19f700afb95c3b555": {
+        "id": "AS_Segment_e9cecbadfb2944a19f700afb95c3b555",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "seguiWidget"
+        }, {
+            "datatype": "number",
+            "name": "sectionIndex"
+        }, {
+            "datatype": "number",
+            "name": "rowIndex"
+        }],
+        "contextObj": {
+            "KUID": "f1d5859939e44cf9a86f0eff4bf5ae65",
+            "name": "frmIntro",
+            "platform": "",
+            "type": "forms"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c9e4de7e620b47919c2b7a2c4ef70f58",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onSegmentSwipe();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

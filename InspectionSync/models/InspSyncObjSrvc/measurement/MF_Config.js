@@ -2,7 +2,6 @@ define([],function(){
 	var mappings = {
 		"CreatedTimestamp" : "CreatedTimestamp",
 		"Description" : "Description",
-		"LastUpdatedTimestamp" : "LastUpdatedTimestamp",
 		"Measurement_Id" : "Measurement_Id",
 		"Name" : "Name",
 		"UOM" : "UOM",
@@ -12,7 +11,6 @@ define([],function(){
 	var typings = {
 		"CreatedTimestamp" : "date",
 		"Description" : "string",
-		"LastUpdatedTimestamp" : "date",
 		"Measurement_Id" : "number",
 		"Name" : "string",
 		"UOM" : "string",

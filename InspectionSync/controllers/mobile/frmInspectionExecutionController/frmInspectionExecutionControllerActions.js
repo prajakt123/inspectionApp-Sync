@@ -5,8 +5,7 @@ define({
     /** onClick defined for flxBack **/
     AS_FlexContainer_ac7c8f153265423eb7701d9b3ed8aa71: function AS_FlexContainer_ac7c8f153265423eb7701d9b3ed8aa71(eventobject) {
         var self = this;
-        var ntf = new kony.mvc.Navigation("frmInspectionsList");
-        ntf.navigate();
+        this.navigateToFrmInspectionList();
     },
     /** onClick defined for flxHistory **/
     AS_FlexContainer_c201748a9dec4316aa2cd4d2129297cc: function AS_FlexContainer_c201748a9dec4316aa2cd4d2129297cc(eventobject) {
@@ -21,8 +20,12 @@ define({
     /** onClick defined for btnPdf **/
     AS_Button_cf5f6f219d124ff38e7377f98b743bdd: function AS_Button_cf5f6f219d124ff38e7377f98b743bdd(eventobject) {
         var self = this;
-        var ntf = new kony.mvc.Navigation("frmPdfViewer");
-        ntf.navigate();
+        try {
+            var navObj = new kony.mvc.Navigation("frmPdfViewer");
+            navObj.navigate();
+        } catch (excp) {
+            kony.print(JSON.stringify(excp));
+        }
     },
     /** onMeasurementDone defined for measurement **/
     AS_UWI_e0d8fba678a04b90b0aeb77e87201a1f: function AS_UWI_e0d8fba678a04b90b0aeb77e87201a1f(result) {

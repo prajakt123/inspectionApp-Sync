@@ -38,7 +38,7 @@
     "bounces": true,
     "canUpdateUI": true,
     "children": [
-        "loadingScreen",
+        "lblNetworkStatus",
         "flxHeader",
         "flxProfileImageContainer",
         "flxEmailContainer",

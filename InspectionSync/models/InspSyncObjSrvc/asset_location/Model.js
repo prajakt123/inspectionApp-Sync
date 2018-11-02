@@ -20,9 +20,6 @@ define([],function(){
 		Id : function(val, state){
 			state['Id'] = val;
 		},
-		LastUpdatedTimestamp : function(val, state){
-			state['LastUpdatedTimestamp'] = val;
-		},
 		Latitude : function(val, state){
 			state['Latitude'] = val;
 		},
@@ -50,7 +47,6 @@ define([],function(){
 			privateState.CreatedTimestamp = defaultValues?(defaultValues["CreatedTimestamp"]?defaultValues["CreatedTimestamp"]:null):null;
 			privateState.Description = defaultValues?(defaultValues["Description"]?defaultValues["Description"]:null):null;
 			privateState.Id = defaultValues?(defaultValues["Id"]?defaultValues["Id"]:null):null;
-			privateState.LastUpdatedTimestamp = defaultValues?(defaultValues["LastUpdatedTimestamp"]?defaultValues["LastUpdatedTimestamp"]:null):null;
 			privateState.Latitude = defaultValues?(defaultValues["Latitude"]?defaultValues["Latitude"]:null):null;
 			privateState.Longitude = defaultValues?(defaultValues["Longitude"]?defaultValues["Longitude"]:null):null;
 			privateState.Post_Code = defaultValues?(defaultValues["Post_Code"]?defaultValues["Post_Code"]:null):null;
@@ -98,13 +94,6 @@ define([],function(){
 					get : function(){return privateState.Id},
 					set : function(val){
 						setterFunctions['Id'].call(this,val,privateState);
-					},
-					enumerable : true,
-				},
-				"LastUpdatedTimestamp" : {
-					get : function(){return privateState.LastUpdatedTimestamp},
-					set : function(val){
-						setterFunctions['LastUpdatedTimestamp'].call(this,val,privateState);
 					},
 					enumerable : true,
 				},

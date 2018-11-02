@@ -17,9 +17,6 @@ define([],function(){
 		LastName : function(val, state){
 			state['LastName'] = val;
 		},
-		LastUpdatedTimestamp : function(val, state){
-			state['LastUpdatedTimestamp'] = val;
-		},
 		Password : function(val, state){
 			state['Password'] = val;
 		},
@@ -40,7 +37,6 @@ define([],function(){
 			privateState.FirstName = defaultValues?(defaultValues["FirstName"]?defaultValues["FirstName"]:null):null;
 			privateState.id = defaultValues?(defaultValues["id"]?defaultValues["id"]:null):null;
 			privateState.LastName = defaultValues?(defaultValues["LastName"]?defaultValues["LastName"]:null):null;
-			privateState.LastUpdatedTimestamp = defaultValues?(defaultValues["LastUpdatedTimestamp"]?defaultValues["LastUpdatedTimestamp"]:null):null;
 			privateState.Password = defaultValues?(defaultValues["Password"]?defaultValues["Password"]:null):null;
 			privateState.Role = defaultValues?(defaultValues["Role"]?defaultValues["Role"]:null):null;
 			privateState.User_Id = defaultValues?(defaultValues["User_Id"]?defaultValues["User_Id"]:null):null;
@@ -79,13 +75,6 @@ define([],function(){
 					get : function(){return privateState.LastName},
 					set : function(val){
 						setterFunctions['LastName'].call(this,val,privateState);
-					},
-					enumerable : true,
-				},
-				"LastUpdatedTimestamp" : {
-					get : function(){return privateState.LastUpdatedTimestamp},
-					set : function(val){
-						setterFunctions['LastUpdatedTimestamp'].call(this,val,privateState);
 					},
 					enumerable : true,
 				},

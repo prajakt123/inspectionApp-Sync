@@ -36,7 +36,8 @@
         "flxInfoCard",
         "alertpopup",
         "flxScheduleDateTime",
-        "flxAssignedTechnician"
+        "flxAssignedTechnician",
+        "loadingScreen"
     ],
     "containerweight": 100,
     "controllerInfo": {

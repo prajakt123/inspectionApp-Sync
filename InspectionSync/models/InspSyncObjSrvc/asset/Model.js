@@ -26,9 +26,6 @@ define([],function(){
 		image_base64 : function(val, state){
 			state['image_base64'] = val;
 		},
-		LastUpdatedTimestamp : function(val, state){
-			state['LastUpdatedTimestamp'] = val;
-		},
 		Manufacture_Model_Nbr : function(val, state){
 			state['Manufacture_Model_Nbr'] = val;
 		},
@@ -55,7 +52,6 @@ define([],function(){
 			privateState.CreatedTimestamp = defaultValues?(defaultValues["CreatedTimestamp"]?defaultValues["CreatedTimestamp"]:null):null;
 			privateState.Id = defaultValues?(defaultValues["Id"]?defaultValues["Id"]:null):null;
 			privateState.image_base64 = defaultValues?(defaultValues["image_base64"]?defaultValues["image_base64"]:null):null;
-			privateState.LastUpdatedTimestamp = defaultValues?(defaultValues["LastUpdatedTimestamp"]?defaultValues["LastUpdatedTimestamp"]:null):null;
 			privateState.Manufacture_Model_Nbr = defaultValues?(defaultValues["Manufacture_Model_Nbr"]?defaultValues["Manufacture_Model_Nbr"]:null):null;
 			privateState.Manufacture_Part_Nbr = defaultValues?(defaultValues["Manufacture_Part_Nbr"]?defaultValues["Manufacture_Part_Nbr"]:null):null;
 			privateState.Manufacture_Serial_Nbr = defaultValues?(defaultValues["Manufacture_Serial_Nbr"]?defaultValues["Manufacture_Serial_Nbr"]:null):null;
@@ -116,13 +112,6 @@ define([],function(){
 					get : function(){return privateState.image_base64},
 					set : function(val){
 						setterFunctions['image_base64'].call(this,val,privateState);
-					},
-					enumerable : true,
-				},
-				"LastUpdatedTimestamp" : {
-					get : function(){return privateState.LastUpdatedTimestamp},
-					set : function(val){
-						setterFunctions['LastUpdatedTimestamp'].call(this,val,privateState);
 					},
 					enumerable : true,
 				},

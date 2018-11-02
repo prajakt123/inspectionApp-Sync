@@ -3,7 +3,6 @@ define([],function(){
 		"CreatedTimestamp" : "CreatedTimestamp",
 		"Description" : "Description",
 		"Group_Id" : "Group_Id",
-		"LastUpdatedTimestamp" : "LastUpdatedTimestamp",
 		"Name" : "Name",
 	};
 	Object.freeze(mappings);
@@ -12,7 +11,6 @@ define([],function(){
 		"CreatedTimestamp" : "date",
 		"Description" : "string",
 		"Group_Id" : "number",
-		"LastUpdatedTimestamp" : "date",
 		"Name" : "string",
 	}
 	Object.freeze(typings);

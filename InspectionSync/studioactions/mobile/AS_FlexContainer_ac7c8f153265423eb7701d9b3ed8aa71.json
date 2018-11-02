@@ -17,7 +17,14 @@
             "parentId": "",
             "callbackType": null,
             "enableMappingEditor": true,
+            "disabled": true,
             "package": ""
+        }, {
+            "id": "ADD_SNIPPET__bb5139349aaa4657b8a05b33d869c8df",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.navigateToFrmInspectionList();",
+            "parentId": null,
+            "callbackType": null
         }]
     }
 }

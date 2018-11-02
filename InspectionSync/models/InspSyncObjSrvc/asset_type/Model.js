@@ -14,9 +14,6 @@ define([],function(){
 		Id : function(val, state){
 			state['Id'] = val;
 		},
-		LastUpdatedTimestamp : function(val, state){
-			state['LastUpdatedTimestamp'] = val;
-		},
 		Name : function(val, state){
 			state['Name'] = val;
 		},
@@ -33,7 +30,6 @@ define([],function(){
 			privateState.CreatedTimestamp = defaultValues?(defaultValues["CreatedTimestamp"]?defaultValues["CreatedTimestamp"]:null):null;
 			privateState.Description = defaultValues?(defaultValues["Description"]?defaultValues["Description"]:null):null;
 			privateState.Id = defaultValues?(defaultValues["Id"]?defaultValues["Id"]:null):null;
-			privateState.LastUpdatedTimestamp = defaultValues?(defaultValues["LastUpdatedTimestamp"]?defaultValues["LastUpdatedTimestamp"]:null):null;
 			privateState.Name = defaultValues?(defaultValues["Name"]?defaultValues["Name"]:null):null;
 			privateState.Timestamp = defaultValues?(defaultValues["Timestamp"]?defaultValues["Timestamp"]:null):null;
 		//Using parent contructor to create other properties req. to kony sdk	
@@ -64,13 +60,6 @@ define([],function(){
 					get : function(){return privateState.Id},
 					set : function(val){
 						setterFunctions['Id'].call(this,val,privateState);
-					},
-					enumerable : true,
-				},
-				"LastUpdatedTimestamp" : {
-					get : function(){return privateState.LastUpdatedTimestamp},
-					set : function(val){
-						setterFunctions['LastUpdatedTimestamp'].call(this,val,privateState);
 					},
 					enumerable : true,
 				},

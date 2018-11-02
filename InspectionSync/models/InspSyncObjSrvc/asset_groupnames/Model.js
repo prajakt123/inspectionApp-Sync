@@ -14,9 +14,6 @@ define([],function(){
 		Group_Id : function(val, state){
 			state['Group_Id'] = val;
 		},
-		LastUpdatedTimestamp : function(val, state){
-			state['LastUpdatedTimestamp'] = val;
-		},
 	};
 	
 	
@@ -27,7 +24,6 @@ define([],function(){
 			privateState.Asset_Id = defaultValues?(defaultValues["Asset_Id"]?defaultValues["Asset_Id"]:null):null;
 			privateState.CreatedTimestamp = defaultValues?(defaultValues["CreatedTimestamp"]?defaultValues["CreatedTimestamp"]:null):null;
 			privateState.Group_Id = defaultValues?(defaultValues["Group_Id"]?defaultValues["Group_Id"]:null):null;
-			privateState.LastUpdatedTimestamp = defaultValues?(defaultValues["LastUpdatedTimestamp"]?defaultValues["LastUpdatedTimestamp"]:null):null;
 		//Using parent contructor to create other properties req. to kony sdk	
 			BaseModel.call(this);
 
@@ -56,13 +52,6 @@ define([],function(){
 					get : function(){return privateState.Group_Id},
 					set : function(val){
 						setterFunctions['Group_Id'].call(this,val,privateState);
-					},
-					enumerable : true,
-				},
-				"LastUpdatedTimestamp" : {
-					get : function(){return privateState.LastUpdatedTimestamp},
-					set : function(val){
-						setterFunctions['LastUpdatedTimestamp'].call(this,val,privateState);
 					},
 					enumerable : true,
 				},

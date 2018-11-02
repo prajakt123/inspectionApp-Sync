@@ -40,7 +40,7 @@
         "value": "50%"
     },
     "children": [
-        "loadingScreen",
+        "lblNetworkStatus",
         "flxHeader",
         "flxScAssetDetailContainer"
     ],

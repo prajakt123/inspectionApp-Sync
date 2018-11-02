@@ -11,9 +11,6 @@ define([],function(){
 		id : function(val, state){
 			state['id'] = val;
 		},
-		LastUpdatedTimestamp : function(val, state){
-			state['LastUpdatedTimestamp'] = val;
-		},
 		media_base64 : function(val, state){
 			state['media_base64'] = val;
 		},
@@ -38,7 +35,6 @@ define([],function(){
 			privateState.CreatedTimestamp = defaultValues?(defaultValues["CreatedTimestamp"]?defaultValues["CreatedTimestamp"]:null):null;
 			privateState.extension = defaultValues?(defaultValues["extension"]?defaultValues["extension"]:null):null;
 			privateState.id = defaultValues?(defaultValues["id"]?defaultValues["id"]:null):null;
-			privateState.LastUpdatedTimestamp = defaultValues?(defaultValues["LastUpdatedTimestamp"]?defaultValues["LastUpdatedTimestamp"]:null):null;
 			privateState.media_base64 = defaultValues?(defaultValues["media_base64"]?defaultValues["media_base64"]:null):null;
 			privateState.media_id = defaultValues?(defaultValues["media_id"]?defaultValues["media_id"]:null):null;
 			privateState.Timestamp = defaultValues?(defaultValues["Timestamp"]?defaultValues["Timestamp"]:null):null;
@@ -67,13 +63,6 @@ define([],function(){
 					get : function(){return privateState.id},
 					set : function(val){
 						setterFunctions['id'].call(this,val,privateState);
-					},
-					enumerable : true,
-				},
-				"LastUpdatedTimestamp" : {
-					get : function(){return privateState.LastUpdatedTimestamp},
-					set : function(val){
-						setterFunctions['LastUpdatedTimestamp'].call(this,val,privateState);
 					},
 					enumerable : true,
 				},

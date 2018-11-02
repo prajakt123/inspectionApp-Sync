@@ -76,7 +76,7 @@ define({
     /** onClick defined for btnCancelSearch **/
     AS_Button_cd0860be7edd4209a7d0ce2d24da3fd6: function AS_Button_cd0860be7edd4209a7d0ce2d24da3fd6(eventobject) {
         var self = this;
-        return self.hideSearchContainer.call(this);
+        this.hideSearchContainer();
     },
     /** onRowClick defined for SegAssets **/
     AS_Segment_fdb6c133635e4d5a9834e71cb8949f4c: function AS_Segment_fdb6c133635e4d5a9834e71cb8949f4c(eventobject, sectionNumber, rowNumber) {

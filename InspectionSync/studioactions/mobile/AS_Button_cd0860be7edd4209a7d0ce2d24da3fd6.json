@@ -14,8 +14,14 @@
             "display": "hideSearchContainer",
             "inputparams": [],
             "callbackType": null,
-            "disabled": null,
+            "disabled": true,
             "source": "controller"
+        }, {
+            "id": "ADD_SNIPPET__ad4cf19069be4240a83c9f74d0c667ab",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.hideSearchContainer();",
+            "parentId": null,
+            "callbackType": null
         }]
     }
 }

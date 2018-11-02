@@ -23,7 +23,14 @@
             "parentId": "",
             "callbackType": null,
             "enableMappingEditor": true,
+            "disabled": true,
             "package": ""
+        }, {
+            "id": "ADD_SNIPPET__e68ce8bbe4bf49e999bf0d3114f05016",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try{\n  var navObj=new kony.mvc.Navigation(\"frmPdfViewer\");\n  navObj.navigate();\n}catch(excp){\n  kony.print(JSON.stringify(excp));\n}",
+            "parentId": null,
+            "callbackType": null
         }]
     }
 }

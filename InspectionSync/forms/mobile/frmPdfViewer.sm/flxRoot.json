@@ -36,9 +36,9 @@
         "value": "50%"
     },
     "children": [
-        "pdfviewer",
+        "lblNetworkStatus",
         "flxHeader",
-        "loadingScreen"
+        "pdfviewer"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -48,7 +48,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "fb3a43b9c33849e790ca32ff32048733",
-    "layouttype": 2,
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "frmPdfViewer",
     "pf": "frmPdfViewer",

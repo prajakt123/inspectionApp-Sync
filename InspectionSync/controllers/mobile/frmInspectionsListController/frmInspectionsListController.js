@@ -19,9 +19,9 @@ define({
     debugger;
     this.count=0;
     if(!InspectionUtil.isNetworkAvailable()){
-      this.view.loadingScreen.show("offline",2);
+     // this.view.loadingScreen.show("offline",2);
     }else{
-      this.view.loadingScreen.hide(2);
+      //this.view.loadingScreen.hide(2);
     }
     if(param!==null && param!==undefined && typeof param!=='string'){
       this.userID=param.userid;
@@ -307,7 +307,7 @@ define({
     var navigationData = {};
     navigationData.previousForm = "frmInspectionsList";
     navigationData.userAttribute = this._navigationData;
-    this._navigationData=null;
+    //this._navigationData=null;
     navObj.navigate(navigationData);
   },
 

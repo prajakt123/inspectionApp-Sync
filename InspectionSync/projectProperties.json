@@ -7,7 +7,7 @@
     "defaultlocalekey": "en",
     "apppackagekey": "",
     "nativeContainerProperties": {
-        "isModified": false,
+        "isModified": true,
         "isEnableJSContainer": true,
         "isEnableJSContainerAndroid": true,
         "isEnableJSContaineriOS": true
@@ -20,7 +20,7 @@
     },
     "appversionkey": "1.0.0",
     "project.type": "js",
-    "startupformkey": "h34e1417cbdc4d9bb67df1cb269d786e",
+    "startupformkey": "a61efde3948c426e884fcd29221303fe",
     "wap_bb480_fontsize": "17",
     "wap_winphone480_fontsize": "12",
     "kfAppInfo": {

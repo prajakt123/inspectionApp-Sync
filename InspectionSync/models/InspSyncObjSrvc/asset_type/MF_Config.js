@@ -4,7 +4,6 @@ define([],function(){
 		"CreatedTimestamp" : "CreatedTimestamp",
 		"Description" : "Description",
 		"Id" : "Id",
-		"LastUpdatedTimestamp" : "LastUpdatedTimestamp",
 		"Name" : "Name",
 		"Timestamp" : "Timestamp",
 	};
@@ -15,7 +14,6 @@ define([],function(){
 		"CreatedTimestamp" : "date",
 		"Description" : "string",
 		"Id" : "string",
-		"LastUpdatedTimestamp" : "date",
 		"Name" : "string",
 		"Timestamp" : "date",
 	}

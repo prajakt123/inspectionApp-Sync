@@ -55,7 +55,7 @@
         }
     },
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "h10e7b10a6224620907871c37751bf83",
     "name": "kony.ui.Label",
     "parent": "flxInspectionCreation",

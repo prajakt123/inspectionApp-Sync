@@ -31,7 +31,8 @@
     },
     "canUpdateUI": true,
     "children": [
-        "flxRoot"
+        "flxRoot",
+        "loadingScreen"
     ],
     "containerweight": 100,
     "controllerInfo": {

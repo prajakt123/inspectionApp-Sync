@@ -31,8 +31,8 @@
     },
     "canUpdateUI": true,
     "children": [
-        "LoginComponent",
-        "loadingScreen"
+        "loadingScreen",
+        "flxRoot"
     ],
     "containerweight": 100,
     "controllerInfo": {
